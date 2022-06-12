@@ -1,0 +1,38 @@
+$color-1: #020d10;
+$color-2: salmon;
+$color-3: #282c34;
+$white: rgba(243, 243, 243, 0.128);
+
+@mixin verticalCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+//   background: url(../../img/nature.jpg) center/cover no-repeat ;
+//   height: 100vh;
+//   overflow: hidden;
+}
+
+body {
+  background: $white;
+  font-family: sans-serif;
+  @include verticalCenter;
+}
+li {
+  list-style-type: none;
+}
+// ul{
+//     // display: flex;
+//     // align-items: center;
+//     // justify-content: space-around;
+//     // gap: 10rem;
+// }
+// a{
+//     // text-decoration: none;<
+//     // font-size: 25px;
+// }

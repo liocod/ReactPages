@@ -1,0 +1,133 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: rgba(243, 243, 243, 0.128);
+  font-family: sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+li {
+  list-style-type: none;
+}
+
+.navigation ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 30px;
+}
+
+.navigation ul a {
+  text-decoration: none;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.navigation ul a li {
+  color: blue;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.navigation ul a li:hover {
+  color: blue;
+}
+
+.navigation ul .nav-active {
+  position: relative;
+}
+
+.navigation ul .nav-active::after {
+  content: "";
+  height: 4px;
+  width: 0;
+  background: blue;
+  position: absolute;
+  border-radius: 10px;
+  bottom: 0px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  -webkit-animation: anim 0.3s ease forwards;
+  animation: anim 0.6s ease forwards;
+}
+
+@-webkit-keyframes anim {
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes anim {
+  to {
+    width: 100%;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "montserrat", sans-serif;
+}
+
+.border {
+  width: 100px;
+  height: 10px;
+  background: blue;
+}
+
+.contact-form-text {
+  display: block;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 26px 0;
+  border: 0;
+  background: #d3d3d3;
+  padding: 20px 150px;
+  outline: none;
+  color: #ddd;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.contact-form-text:focus {
+  -webkit-box-shadow: 0 0 10px 4px blue;
+          box-shadow: 0 0 10px 4px blue;
+}
+
+textarea.contact-form-text {
+  resize: none;
+  height: 320px;
+}
+
+.contact-form-btn {
+  float: right;
+  border: 0;
+  background: blue;
+  color: #fff;
+  padding: 12px 50px;
+  border-radius: 20px;
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.contact-form-btn:hover {
+  background: blue;
+}
+/*# sourceMappingURL=index.css.map */
